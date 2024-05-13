@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
 from crewai import Agent, Task, Crew, Process
 import json
-from crewai_tools import JSONSearchTool, PDFSearchTool, TXTSearchTool, WebsiteSearchTool
+from crewai_tools import WebsiteSearchTool
 import streamlit as st
 
 load_dotenv()
@@ -102,7 +102,7 @@ class OutreachTasks():
                                  **Example**:-'
                                              Here's an example format:
 
-                                             ###Subject: [Compelling Subject Line related to Outreach Reason] (Note: Arabic text indicates the desired characteristic of the subject line)
+                                             ###Subject: [Compelling Subject Line related to Outreach Reason]
 
                                              ### Hi [Prospect Name],
 
